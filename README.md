@@ -1,11 +1,11 @@
 # open file in vscode Recipe_ChatBoat
 
-##for Task 1 I have used Levenshtein similarty score  after that retrun output in descending order of matching  score 1 to 0
+for Task 1 I have used Levenshtein similarty score  after that retrun output in descending order of matching  score 1 to 0
 
-#run 
-#python task1_word_matching_search.py
+run 
+python task1_word_matching_search.py
 
-#then enter any name like Gita on console
+then enter any name like Gita on console
 
 Hi there
 Enter a name: Gita
@@ -15,7 +15,7 @@ Best Match: ('Gita', 1.0)
 Other Matches: [('Gita', 1.0), ('Githa', 0.8888888888888888), ('Gitu', 0.75), ('Sita', 0.75), ('Rita', 0.75)]
 
 
-##Task 2 
+#Task 2 Recipe ChatBoat 
 
 # create virtual environment
 python -m venv venv
