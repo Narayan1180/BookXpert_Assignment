@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #e3f2fd, #f1f8ff);
+}
+
+/* Center everything */
+.app-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* BIG CHAT CONTAINER */
+.chat-container {
+    width: 680px;
+    height: 560px;          /* 👈 reduced height */
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* HEADER */
+.chat-header {
+    background: linear-gradient(90deg, #64b5f6, #42a5f5);
+    color: white;
+    padding: 22px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.chat-header p {
+    margin: 6px 0 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* CHAT AREA */
+.chat-box {
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+    background: #f7fbff;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* MESSAGES */
+.user-message,
+.bot-message {
+    max-width: 70%;
+    padding: 14px 18px;
+    border-radius: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.user-message {
+    background: #e1f0ff;
+    align-self: flex-end;
+    border-bottom-right-radius: 6px;
+}
+
+.bot-message {
+    background: #ffffff;
+    border: 1px solid #d6e9ff;
+    align-self: flex-start;
+    border-bottom-left-radius: 6px;
+}
+
+/* INPUT AREA */
+.input-box {
+    display: flex;
+    padding: 18px;
+    background: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 16px 18px;
+    border-radius: 30px;
+    border: 1px solid #bcdcff;
+    outline: none;
+    font-size: 16px;
+}
+
+/* SEND BUTTON */
+.send-btn {
+    margin-left: 12px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, #64b5f6, #1e88e5);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(30,136,229,0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.send-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 24px rgba(30,136,229,0.45);
+}

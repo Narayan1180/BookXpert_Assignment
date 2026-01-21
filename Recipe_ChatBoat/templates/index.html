@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RecipeBot 🍲</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app-wrapper">
+    <div class="chat-container">
+        <div class="chat-header">
+            🤖 RecipeBot
+            <p>Suggests recipes from ingredients</p>
+        </div>
+
+        <div class="chat-box" id="chatBox">
+            <div class="bot-message">
+                Hi 👋 <br>
+                Enter ingredients like <b>egg onion</b> to get a recipe!
+            </div>
+        </div>
+
+        <div class="input-box">
+            <input 
+                type="text" 
+                id="ingredientInput" 
+                placeholder="Type ingredients..."
+                onkeydown="if(event.key==='Enter') sendMessage()"
+            />
+            <button onclick="sendMessage()" class="send-btn">
+                ➤
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
